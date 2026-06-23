@@ -45,7 +45,6 @@ updated_at| DateTime
 ├── models.py
 ├── seed.py
 ├── create_indexes.py
-├── .env
 ├── .env.example
 ├── assignment_check.py
 ├── check.txt
