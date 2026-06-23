@@ -77,8 +77,7 @@ The seed script generates 200,000 products and inserts them in batches of 5,000 
 
 Run:
 
-``` python seed.py
-```
+``` python seed.py ```
 ### Features:
 
 - UUID based identifiers
@@ -123,8 +122,7 @@ GET /products?limit=20&cursor_created_at=2026-06-23T11:14:21.536879&cursor_id=34
 
 Offset pagination:
 
-``` LIMIT 20 OFFSET 20
-```
+``` LIMIT 20 OFFSET 20 ```
 can produce duplicate or missing products when new products are inserted while users browse.
 
 Example:
