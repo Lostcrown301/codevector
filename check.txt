@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": "5c9dcf30-d189-4d3d-9ecb-20839aba4c4e",
+      "name": "Product 199712",
+      "category": "Books",
+      "price": 8748,
+      "created_at": "2026-06-23T11:14:21.571202",
+      "updated_at": "2026-06-23T11:14:21.571205"
+    },
+    {
+      "id": "b6dce2c8-06d0-4f5b-925b-2331249d6163",
+      "name": "Product 199598",
+      "category": "Clothing",
+      "price": 6327,
+      "created_at": "2026-06-23T11:14:21.567521",
+      "updated_at": "2026-06-23T11:14:21.567524"
+    },
+    {
+      "id": "0982528d-2b3e-41b1-892c-db7f49500c12",
+      "name": "Product 199117",
+      "category": "Home",
+      "price": 8652,
+      "created_at": "2026-06-23T11:14:21.551152",
+      "updated_at": "2026-06-23T11:14:21.551156"
+    },
+    {
+      "id": "fed9bda9-8cef-42df-a62e-82bd2b88ed05",
+      "name": "Product 199085",
+      "category": "Electronics",
+      "price": 8760,
+      "created_at": "2026-06-23T11:14:21.550083",
+      "updated_at": "2026-06-23T11:14:21.550086"
+    },
+    {
+      "id": "340b183c-d68e-4088-b60a-e1302cbc659d",
+      "name": "Product 198807",
+      "category": "Home",
+      "price": 1710,
+      "created_at": "2026-06-23T11:14:21.536879",
+      "updated_at": "2026-06-23T11:14:21.536883"
+    }
+  ],
+  "next_cursor": {
+    "created_at": "2026-06-23T11:14:21.536879",
+    "id": "340b183c-d68e-4088-b60a-e1302cbc659d"
+  }
+}
