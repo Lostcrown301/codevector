@@ -1,14 +1,13 @@
 from fastapi import FastAPI
 from database import engine, Base, SessionLocal
 from models import Product
-from sqlalchemy import and_, or_
-from models import Product
+from sqlalchemy import and_, or_
 from datetime import datetime
 app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
 
-LIMIT = 20
+LIMIT = 5
 
 def serialize_product(product):
     return {
@@ -16,8 +15,8 @@ def serialize_product(product):
         "name" : product.name,
         "category" : product.category,
         "price" : product.price,
-        "created_at" : product.created_at,
-        "updated_at" : product.updated_at
+        "created_at" : product.created_at.isoformat(),
+        "updated_at" : product.updated_at.isoformat()
 
     }
 
@@ -29,7 +28,7 @@ def home():
 
 @app.get("/products")
 def get_products(
-    limit: int = 20,
+    limit: int = LIMIT,
     category: str | None = None,
     cursor_created_at: datetime | None = None,
     cursor_id: str | None = None
@@ -78,3 +77,5 @@ def get_products(
         "products": [serialize_product(product) for product in products],
         "next_cursor": next_cursor
     }
+
+    db.close()
